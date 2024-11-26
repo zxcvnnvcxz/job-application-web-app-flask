@@ -9,6 +9,7 @@ app.config["SECRET_KEY"] = "webapplication123"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 db = SQLAlchemy(app)
 
+# TO_DO: Add email capabilities if needed. 414 Section 51 
 
 class Form(db.Model):
     id = db.Column(db.Integer, primary_key=True)
